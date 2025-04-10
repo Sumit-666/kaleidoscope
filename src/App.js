@@ -6,6 +6,7 @@ import './App.css';
 import Home from "./components/Home/home";
 import AboutUs from './components/About/aboutUs';
 import Portfolios from './components/Portfolios/Portfolios';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/Portfolios" element={<Portfolios />} />
+        <Route path="/Services" element={<Services />} />
       </Routes>
       <Footer />
     </BrowserRouter>

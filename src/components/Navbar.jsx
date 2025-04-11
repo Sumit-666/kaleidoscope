@@ -26,7 +26,7 @@ const Navbar = ({ setBookDemoPopupOpen }) => {
               { name: "About us", path: "/aboutUs" },
               { name: "Services", path: "/Services" },
               { name: "Portfolios", path: "/Portfolios" },
-              { name: "Contact Us", path: "/contact" }
+              { name: "ContactUs", path: "/ContactUs" }
             ].map((item) => (
               <Link
                 key={item.path}

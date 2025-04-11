@@ -2,6 +2,7 @@ import React from "react";
 import servicesImage from "../images/servicess.png";
 import { ArrowUpRight } from "lucide-react";
 import HaveAIdea from "../common/HaveAidea";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -32,18 +33,22 @@ const Services = () => {
             individuals' and organizations' visions to life through
             high-quality, professional video production that shakes things up.
           </p>
+          <Link to="/Portfolios">
+            <button className="mt-6 bg-white text-black gap-2 font-sans items-center justify-center flex flex-row rounded-full p-4">
+              View Portfolios <ArrowUpRight />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col items-center p-10 md:p-20 text-center">
-        {/* Heading Section */}
+       
         <div className="flex flex-col justify-center mx-auto relative gap-4 md:gap-8">
           <h1 className="font-serif font-normal text-[36px] md:text-[54px] leading-[42px] md:leading-[58px]">
-          We provide a wide  <br />
+            We provide a wide <br />
             <span className="text-blue-400">range of services</span>
           </h1>
         </div>
 
-       
         <div className="grid grid-cols-1 gap-6 mt-12 max-w-[1110px] w-full text-left font-serif">
           {[
             "Commercials",
@@ -68,7 +73,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <HaveAIdea/>
+      <HaveAIdea />
     </div>
   );
 };
